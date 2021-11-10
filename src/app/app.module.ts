@@ -3,14 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { WatchComponent } from './watch/watch.component';
+import {PersonalTime} from "./pipes/personal-time";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WatchComponent,
+    PersonalTime
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
